@@ -908,3 +908,100 @@ select {
         opacity: 1;
     }
 }
+
+/* ═══════════════════════════════════════
+    RESPONSIVE — MÓVIL
+═══════════════════════════════════════ */
+@media (max-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    /* NAVBAR */
+    .nav-links {
+        display: none;
+    }
+
+    .nav-container {
+        padding: 0.875rem 1.25rem;
+    }
+
+    /* HERO */
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1.25rem;
+        text-align: center;
+    }
+
+    .hero-right {
+        order: -1;
+    }
+
+    .hero-avatar {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .hero-name {
+        font-size: 2rem;
+    }
+
+    .hero-btns {
+        justify-content: center;
+    }
+
+    .hero-tags {
+        justify-content: center;
+    }
+
+    /* SECTIONS */
+    section {
+        padding: 3rem 1.25rem;
+    }
+
+    /* ABOUT */
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* SKILLS */
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* EXPERIENCIA */
+    .xp-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .xp-left {
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .xp-line {
+        display: none;
+    }
+
+    .xp-right {
+        padding-left: 0;
+        border-left: 3px solid var(--yellow);
+        padding-left: 1rem;
+    }
+
+    /* CONTACTO */
+    .contacto-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    /* PROYECTO */
+    .proyectos-container {
+        grid-template-columns: 1fr;
+    }
+
+}
